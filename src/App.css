@@ -1,3 +1,39 @@
+.wrapper {
+  position: relative;
+}
+
+.page {
+  height: 1024px;
+  /* max-height: 100vh; */
+  width: 768px;
+  overflow: hidden;
+  margin: 0px auto;
+}
+.active_page {
+}
+.noactive_page {
+}
+.page1 {
+  background-color: blue;
+}
+.page2 {
+  background-color: yellow;
+}
+.page3 {
+  background-color: green;
+}
+
+.next {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+.prev {
+  position: absolute;
+  top: 0;
+  left: 50%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
