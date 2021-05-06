@@ -15,13 +15,20 @@ const App = () => {
     }
   };
 
-  // const Number = (page) => {
-  //   return <"Page" + {page}/>;
-  // };
+  const Number = (page) => {
+    const pages = [<Page1 />, <Page2 />, <Page3 />];
+    return pages.map((item, index) => {
+      if (index === page - 1) {
+        return <div key={index}>{item}</div>;
+      } else {
+        return <div key={index}>0000</div>;
+      }
+    });
+  };
 
   return (
     <div className="Wrapper">
-      {/* {Number(page)} */}
+      {Number(page)}
       <button onClick={() => ChangePage()}>prev</button>
       <button onClick={() => ChangePage("next")}>next</button>
     </div>
