@@ -1,18 +1,22 @@
 .wrapper {
   position: relative;
+  /* overflow: hidden; */
 }
 
 .page {
   height: 1024px;
   width: 768px;
-  overflow: hidden;
+  overflow: auto;
   margin: 0px auto;
-  scroll-behavior: smooth;
+
+  /* transition: all 1s ease;
+  overflow-y: scroll;
+  scroll-behavior: smooth; */
 }
 .active_page {
 }
 .noactive_page {
-  display: none;
+  /* position: fixed; */
 }
 .page1 {
   background-color: blue;
@@ -33,13 +37,4 @@
   position: absolute;
   top: 0;
   left: 50%;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

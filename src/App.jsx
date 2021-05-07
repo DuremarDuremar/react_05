@@ -5,23 +5,35 @@ import Page3 from "./components/page3";
 import "./App.css";
 
 const App = () => {
-  const [page, setPage] = useState(1);
-  const [touchStart, setTouchStart] = useState(0);
-  const [touchEnd, setTouchEnd] = useState(0);
   const myRef1 = useRef(null);
   const myRef2 = useRef(null);
   const myRef3 = useRef(null);
+  const [page, setPage] = useState(1);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+
   console.log(page);
   console.log("touchStart", touchStart);
   console.log("touchEnd", touchEnd);
 
-  const scrollElement = () => {
-    myRef2.current.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-    setTouchStart(0);
-    setTouchEnd(0);
+  const scrollElement = (n) => {
+    const touchRef =
+      (+page === 2 && n === "bottom") || (+page === 3 && n === "bottom")
+        ? myRef3
+        : (+page === 2 && n === "top") || (+page === 1 && n === "top")
+        ? myRef1
+        : myRef2;
+    if (touchStart !== 0 && touchEnd !== 0) {
+      touchRef.current.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+      setTouchStart(0);
+      setTouchEnd(0);
+    }
+    if (+page === 2 && n === "top") {
+      console.log(666);
+    }
   };
 
   const handleTouchStart = (e) => {
@@ -34,17 +46,11 @@ const App = () => {
 
   const handleTouchEnd = () => {
     if (touchStart - touchEnd > 50) {
-      if (touchStart !== 0 && touchEnd !== 0) {
-        scrollElement();
-        console.log("botton");
-      }
+      scrollElement("bottom");
     }
 
     if (touchStart - touchEnd < -50) {
-      if (touchStart !== 0 && touchEnd !== 0) {
-        scrollElement();
-        console.log("top");
-      }
+      scrollElement("top");
     }
   };
 
@@ -61,7 +67,7 @@ const App = () => {
     return pages.map((item, index) => {
       const classPage = `page${index + 1}`;
       const classNone =
-        (page == 1 && index == 2) || (page == 3 && index == 0)
+        (+page === 1 && index === 2) || (+page === 3 && index === 0)
           ? "noactive_page"
           : "active_page";
       return (
