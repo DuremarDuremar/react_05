@@ -16,7 +16,7 @@
 .active_page {
 }
 .noactive_page {
-  /* position: fixed; */
+  display: none;
 }
 .page1 {
   background-color: blue;
