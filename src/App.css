@@ -33,7 +33,7 @@
   background-size: 100% 100%;
 }
 
-.page3_title {
+.page1_title {
   font-family: "Gotham Regular", "Arial", sans-serif;
   font-size: 35px;
   font-weight: normal;
@@ -44,4 +44,8 @@
   max-width: 520px;
   object-fit: contain;
   margin: 0;
+}
+.page1_text1 {
+  display: flex;
+  align-items: center;
 }
