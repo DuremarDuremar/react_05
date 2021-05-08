@@ -1,40 +1,32 @@
 .wrapper {
   position: relative;
-  /* overflow: hidden; */
 }
-
 .page {
-  height: 1024px;
-  width: 768px;
-  overflow: auto;
   margin: 0px auto;
-
-  /* transition: all 1s ease;
-  overflow-y: scroll;
-  scroll-behavior: smooth; */
-}
-.active_page {
-}
-.noactive_page {
-  display: none;
+  max-height: 1024px;
+  max-width: 768px;
+  min-height: 100vh;
 }
 .page1 {
   background-color: blue;
+  background-image: url(./images/fon01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-attachment: local; */
+  /* background-position: 50% 0; */
 }
 .page2 {
   background-color: yellow;
+  background-image: url(./images/fon02.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .page3 {
   background-color: green;
-}
-
-.next {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-}
-.prev {
-  position: absolute;
-  top: 0;
-  left: 50%;
+  background-image: url(./images/fon03.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }

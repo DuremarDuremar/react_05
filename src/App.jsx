@@ -19,11 +19,14 @@ const App = () => {
         : (+page === 2 && n === "top") || (+page === 1 && n === "top")
         ? "1"
         : "2";
+    console.log(scr, "scr");
     scroller.scrollTo(scr, {
       duration: 1500,
       delay: 100,
       smooth: true,
     });
+    setTouchStart(0);
+    setTouchEnd(0);
   };
 
   const handleTouchStart = (e) => {
@@ -40,17 +43,17 @@ const App = () => {
   };
 
   const handleTouchEnd = () => {
-    if (touchStart - touchEnd > 150) {
+    if (touchStart - touchEnd > 100) {
       touchMovie("bottom");
     }
 
-    if (touchStart - touchEnd < -150) {
+    if (touchStart - touchEnd < -100) {
       touchMovie("top");
     }
   };
 
   const Pages = () => {
-    const pages = [<Page1 id={1} />, <Page2 id={2} />, <Page3 id={3} />];
+    const pages = [<Page1 />, <Page2 />, <Page3 />];
     return pages.map((item, index) => {
       const classPage = `page${index + 1}`;
 
