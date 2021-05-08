@@ -1,42 +1,69 @@
-import React, { useState, useEffect } from "react";
-import {
-  animateScroll as scroll,
-  scroller,
-  Events,
-  Element,
-} from "react-scroll";
+import React, { useState } from "react";
+import { scroller, Element } from "react-scroll";
 import Page1 from "./components/page1";
 import Page2 from "./components/page2";
 import Page3 from "./components/page3";
 import "./App.css";
 
 const App = () => {
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState("1");
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
 
-  useEffect(() => {
-    Events.scrollEvent.register("begin", console.log("begin"));
+  console.log(page);
 
-    Events.scrollEvent.register("end", function () {
-      console.log("end");
-    });
-    scroller.scrollTo("page2", {
+  const touchMovie = (n) => {
+    const scr =
+      (+page === 2 && n === "bottom") || (+page === 3 && n === "bottom")
+        ? "3"
+        : (+page === 2 && n === "top") || (+page === 1 && n === "top")
+        ? "1"
+        : "2";
+    scroller.scrollTo(scr, {
       duration: 1500,
       delay: 100,
       smooth: true,
-      // containerId: 'ContainerElementID',
     });
-    // return () => {
-    //     cleanup
-    // }
-  }, []);
+  };
+
+  const handleTouchStart = (e) => {
+    let id = e.target.id;
+    if (page !== id) {
+      setPage(id);
+    }
+
+    setTouchStart(e.targetTouches[0].clientY);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientY);
+  };
+
+  const handleTouchEnd = () => {
+    if (touchStart - touchEnd > 150) {
+      touchMovie("bottom");
+    }
+
+    if (touchStart - touchEnd < -150) {
+      touchMovie("top");
+    }
+  };
 
   const Pages = () => {
-    const pages = [<Page1 />, <Page2 />, <Page3 />];
+    const pages = [<Page1 id={1} />, <Page2 id={2} />, <Page3 id={3} />];
     return pages.map((item, index) => {
       const classPage = `page${index + 1}`;
 
       return (
-        <Element key={index} className={classPage + " page"} name={classPage}>
+        <Element
+          id={String(index + 1)}
+          key={index}
+          className={classPage + " page"}
+          name={String(index + 1)}
+          onTouchStart={(e) => handleTouchStart(e)}
+          onTouchMove={(e) => handleTouchMove(e)}
+          onTouchEnd={() => handleTouchEnd()}
+        >
           {item}
         </Element>
       );
