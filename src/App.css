@@ -7,6 +7,7 @@
   height: 1024px;
   width: 768px;
   min-height: 100vh;
+  position: relative;
 }
 .page1 {
   background-color: blue;
@@ -14,9 +15,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-
-  /* background-attachment: local; */
-  /* background-position: 50% 0; */
 }
 .page2 {
   background-color: yellow;
@@ -31,21 +29,4 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-}
-
-.page1_title {
-  font-family: "Gotham Regular", "Arial", sans-serif;
-  font-size: 35px;
-  font-weight: normal;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  color: #0d319c;
-  padding: 70px 0 0 40px;
-  max-width: 520px;
-  object-fit: contain;
-  margin: 0;
-}
-.page1_text1 {
-  display: flex;
-  align-items: center;
 }
