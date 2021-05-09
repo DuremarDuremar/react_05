@@ -19,12 +19,14 @@ const App = () => {
         : (+page === 2 && n === "top") || (+page === 1 && n === "top")
         ? "1"
         : "2";
-    console.log(scr, "scr");
+    // console.log(scr, "scr");
+    setPage(scr);
     scroller.scrollTo(scr, {
       duration: 1500,
       delay: 100,
       smooth: true,
     });
+
     setTouchStart(0);
     setTouchEnd(0);
   };
@@ -72,7 +74,20 @@ const App = () => {
       );
     });
   };
-  return <div className="wrapper"> {Pages()}</div>;
+  return (
+    <div className="wrapper">
+      {Pages()}
+      <div className="buttons">
+        {[...new Array(3).keys()].map((item) => {
+          const classBtn =
+            Number(page) === item + 1
+              ? `btn-${item + 1} btn-active`
+              : `btn-${item + 1}`;
+          return <button key={item} className={classBtn} />;
+        })}
+      </div>
+    </div>
+  );
 };
 
 export default App;

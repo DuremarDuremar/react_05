@@ -30,3 +30,23 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+.buttons {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(-50%);
+  top: 50%;
+  right: 2%;
+  height: 60px;
+}
+button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+.btn-active {
+  background-color: #f78b1f;
+}
