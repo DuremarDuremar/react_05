@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { scroller, Element } from "react-scroll";
-import Page1 from "./components/page1";
-import Page2 from "./components/page2";
-import Page3 from "./components/page3";
+import Page1 from "./pages/page1.jsx";
+import Page2 from "./pages/page2.jsx";
+import Page3 from "./pages/page3.jsx";
 import "./App.css";
 
 const App = () => {
