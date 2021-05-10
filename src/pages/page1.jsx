@@ -1,9 +1,11 @@
 import React from "react";
 import { circle1, circle2, circle3, circle4 } from "../components/circles";
+import bottom from "../images/bottom.png";
+import array from "../images/array.png";
 import "./page1.css";
 const Page1 = () => {
   return (
-    <section>
+    <section className="page1_content">
       <h1 className="page1_title">
         Всегда ли цели терапии СД2 на поверхности?
       </h1>
@@ -21,6 +23,11 @@ const Page1 = () => {
         <h4 className="page1_text page1_text4">
           <span>СС риски</span> {circle4}
         </h4>
+      </div>
+      <div className="page1_bottom">
+        <h3 className="page1_footer-text">Листайте вниз</h3>
+        <img src={array} alt="array" className="page1_array" />
+        <img className="page1_orange" src={bottom} alt="bottom" />
       </div>
     </section>
   );

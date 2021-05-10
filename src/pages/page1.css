@@ -1,7 +1,14 @@
+.page1_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
 .page1_wrapper {
   width: 600px;
   height: 600px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
@@ -46,4 +53,28 @@
 .page1_text4 {
   top: 430px;
   left: 505px;
+}
+.page1_bottom {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page1_footer-text {
+  font-family: GothamPro;
+  letter-spacing: -0.3px;
+  color: #fff;
+}
+.page1_array {
+  width: 50px;
+  height: 30px;
+  margin-bottom: 25px;
+}
+.page1_orange {
+  width: 600px;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  cursor: pointer;
 }
