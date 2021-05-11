@@ -1,5 +1,5 @@
 import React from "react";
-import { arrow } from "../components/arrow";
+import { Arrow } from "../components/arrow";
 import beta from "../images/beta.png";
 import "./page3.css";
 
@@ -12,7 +12,7 @@ const Page3 = () => {
           <strong>1&nbsp;β-клетки</strong>
           <div className="page3_beta">
             <img src={beta} alt="5" />
-            {arrow}
+            <Arrow t2 />
           </div>
         </div>
       </div>

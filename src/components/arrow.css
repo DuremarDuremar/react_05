@@ -1,28 +1,36 @@
-.page3_arrow-1 {
+.page3_arrow {
   position: relative;
   width: 80px;
-  height: 2px;
+  height: 1px;
   background-color: #fff;
   display: block;
 }
-.page3_arrow-1::after {
+.page3_arrow::after {
   content: "";
   position: absolute;
   width: 9px;
-  height: 2px;
+  height: 1px;
   top: -1px;
-  right: -5px;
+  right: -6px;
   background-color: #fff;
   transform: rotate(15deg);
 }
-.page3_arrow-1::before {
+.page3_arrow::before {
   content: "";
   position: absolute;
   width: 9px;
-  height: 2px;
+  height: 1px;
   top: 1px;
-  right: -5px;
+  right: -6px;
   background-color: #fff;
-  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
   transform: rotate(-15deg);
+}
+.page3_arrows_two {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 10px;
+}
+.page3_arrows_two .page3_arrow_wrapper:last-child {
+  transform: rotate(180deg);
 }
