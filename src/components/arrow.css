@@ -1,0 +1,28 @@
+.page3_arrow-1 {
+  position: relative;
+  width: 80px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+}
+.page3_arrow-1::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 2px;
+  top: -1px;
+  right: -5px;
+  background-color: #fff;
+  transform: rotate(15deg);
+}
+.page3_arrow-1::before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 2px;
+  top: 1px;
+  right: -5px;
+  background-color: #fff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  transform: rotate(-15deg);
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import { arrow } from "../components/arrow";
 import beta from "../images/beta.png";
 import "./page3.css";
 
@@ -10,10 +11,8 @@ const Page3 = () => {
         <div className="page3_name1">
           <strong>1&nbsp;β-клетки</strong>
           <div className="page3_beta">
-            <img className="page3_beta-img" src={beta} alt="5" />
-          </div>
-          <div className="page3_arrow-1">
-            <div className="page3_arrow-1_"></div>
+            <img src={beta} alt="5" />
+            {arrow}
           </div>
         </div>
       </div>
