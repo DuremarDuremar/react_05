@@ -91,17 +91,47 @@ const Page3 = () => {
           </WrapperImg>
         </BlockImg>
 
-        <WrapperImg>
-          <img src={infection} alt="infection" />
+        <WrapperImg top="260px" left="50px">
+          <TextImg right>
+            <b>8</b>
+            <br />
+            Жировые клетки
+          </TextImg>
+          <FonImg>
+            <img src={microflora} alt="microflora" />
+          </FonImg>
         </WrapperImg>
-        <WrapperImg>
-          <img src={kidneys} alt="kidneys" />
+        <WrapperImg top="380px" left="5px">
+          <TextImg right>
+            <b>9</b>
+            <br />
+            Нарушение иммунной <br />
+            регуляции/воспаление
+          </TextImg>
+          <FonImg widthImg="90%" heightImg="80%">
+            <img src={infection} alt="infection" />
+          </FonImg>
         </WrapperImg>
-        <WrapperImg>
-          <img src={microflora} alt="microflora" />
+        <WrapperImg top="580px" left="110px">
+          <TextImg right>
+            <b>10</b>
+            <br />
+            Желудок
+          </TextImg>
+          <FonImg widthImg="75%" heightImg="75%">
+            <img src={stomach} alt="stomach" />
+          </FonImg>
         </WrapperImg>
-        <WrapperImg>
-          <img src={stomach} alt="stomach" />
+
+        <WrapperImg top="780px" left="310px">
+          <TextImg right>
+            <b>11</b>
+            <br />
+            Почки
+          </TextImg>
+          <FonImg>
+            <img src={kidneys} alt="kidneys" />
+          </FonImg>
         </WrapperImg>
       </Slide3>
     </Content>

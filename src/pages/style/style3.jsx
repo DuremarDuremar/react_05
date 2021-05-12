@@ -74,9 +74,10 @@ export const TextImg = styled.h3`
   font-family: Lato;
   font-weight: 500;
   font-size: ${(props) => props.fs || "20px"};
-  margin: ${(props) => (props.fs ? "0 0 8px 0" : "0 0 0 8px")};
+  margin: ${(props) =>
+    props.fs ? "0 0 8px 0" : props.right ? "0 8px 0 0" : "0 0 0 8px"};
   letter-spacing: -0.51px;
-  text-align: left;
+  text-align: ${(props) => props.right && "right"};
   color: #fff;
   b {
     font-size: 30px;
