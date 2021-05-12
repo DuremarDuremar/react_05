@@ -38,7 +38,7 @@ export const BlockImg = styled.div`
   border-top-left-radius: 70px;
   border-top-right-radius: 70px;
   position: absolute;
-  top: 350px;
+  top: 360px;
   left: 510px;
   width: 235px;
   height: 260px;

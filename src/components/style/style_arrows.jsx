@@ -4,7 +4,7 @@ export const Arrows = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 10px;
+  height: 14px;
   /* width: ${(props) => props.width || "80px"}; */
   position: absolute;
   top: ${(props) => props.top || "0"};
@@ -48,6 +48,7 @@ export const ArrowWrapper = styled.div`
     `
    :last-child {
     transform: rotate(180deg);
+    
   }
   `}
 `;

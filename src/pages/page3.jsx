@@ -125,7 +125,7 @@ const Page3 = () => {
           </FonImg>
         </WrapperImg>
 
-        <WrapperImg top="780px" left="310px">
+        <WrapperImg top="760px" left="310px">
           <TextImg right>
             <b>11</b>
             <br />
@@ -169,7 +169,7 @@ const Page3 = () => {
           top="325px"
           left="430px"
           rotate="rotate(35deg)"
-          width="100px"
+          width="110px"
         />
         <ArrowPage
           double
@@ -226,6 +226,38 @@ const Page3 = () => {
           left="325px"
           rotate="rotate(90deg)"
           width="105px"
+        />
+        <ArrowPage
+          top="555px"
+          left="190px"
+          rotate="rotate(90deg)"
+          width="18px"
+        />
+        <ArrowPage
+          top="590px"
+          left="205px"
+          rotate="rotate(40deg)"
+          width="140px"
+        />
+        <ArrowPage
+          top="640px"
+          left="245px"
+          rotate="rotate(40deg)"
+          width="70px"
+        />
+        <ArrowPage
+          double
+          top="333px"
+          left="605px"
+          rotate="rotate(90deg)"
+          width="20px"
+        />
+        <ArrowPage
+          double
+          top="720px"
+          left="385px"
+          rotate="rotate(90deg)"
+          width="20px"
         />
       </Slide3>
     </Content>
