@@ -10,6 +10,7 @@ import {
   WrapperImg,
   BlockImg,
 } from "./style/style3";
+import ArrowPage from "../components/arrows";
 import beta from "../images/beta.png";
 import brain from "../images/brain.png";
 import capa from "../images/capa.png";
@@ -19,7 +20,7 @@ import lipid from "../images/lipid.png";
 import microflora from "../images/microflora.png";
 import musle from "../images/musle.png";
 import stomach from "../images/stomach.png";
-import "./page3.css";
+// import "./page3.css";
 
 const Page3 = () => {
   return (
@@ -133,22 +134,37 @@ const Page3 = () => {
             <img src={kidneys} alt="kidneys" />
           </FonImg>
         </WrapperImg>
+        <ArrowPage double top="280px" left="450px" rotate="rotate(15deg)" />
+        <ArrowPage
+          double
+          top="325px"
+          left="430px"
+          rotate="rotate(35deg)"
+          width="100px"
+        />
+        <ArrowPage
+          double
+          top="270px"
+          left="260px"
+          rotate="rotate(-15deg)"
+          width="90px"
+        />
+        <ArrowPage
+          double
+          top="335px"
+          left="240px"
+          rotate="rotate(-35deg)"
+          width="130px"
+        />
+        <ArrowPage
+          top="400px"
+          left="190px"
+          rotate="rotate(130deg)"
+          width="220px"
+        />
       </Slide3>
     </Content>
   );
 };
 
 export default Page3;
-
-{
-  /* <div className="page3_wrapper">
-        <h1 className="page3_title">Звенья патогенеза СД2</h1>
-        <div className="page3_name1">
-          <strong>1&nbsp;β-клетки</strong>
-          <div className="page3_beta">
-            <img src={beta} alt="5" />
-            <Arrow t2 />
-          </div>
-        </div>
-      </div> */
-}
