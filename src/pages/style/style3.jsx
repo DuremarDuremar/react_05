@@ -39,8 +39,8 @@ export const BlockImg = styled.div`
   border-top-right-radius: 70px;
   position: absolute;
   top: 350px;
-  left: 500px;
-  width: 240px;
+  left: 510px;
+  width: 235px;
   height: 260px;
   background: rgb(64, 65, 98);
   background: linear-gradient(
@@ -98,4 +98,15 @@ export const FonImg = styled.div`
     max-width: ${(props) => props.widthImg || "100%"};
     max-height: ${(props) => props.heightImg || "100%"};
   }
+`;
+
+export const LitlleTitle = styled.h4`
+  position: absolute;
+  top: ${(props) => props.top || "0"};
+  left: ${(props) => props.left || "0"};
+  font-size: ${(props) => props.fs || "15px"};
+  color: #fff;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: -0.31px;
 `;

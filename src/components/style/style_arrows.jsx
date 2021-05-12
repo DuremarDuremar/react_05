@@ -13,7 +13,7 @@ export const Arrows = styled.div`
 `;
 export const Arrow = styled.div`
   position: relative;
-  width: ${(props) => props.width || "80px"};
+  width: ${(props) => props.width || "75px"};
   height: 1px;
   background-color: #fff;
   display: block;

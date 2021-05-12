@@ -9,6 +9,7 @@ import {
   FonImg,
   WrapperImg,
   BlockImg,
+  LitlleTitle,
 } from "./style/style3";
 import ArrowPage from "../components/arrows";
 import beta from "../images/beta.png";
@@ -134,7 +135,35 @@ const Page3 = () => {
             <img src={kidneys} alt="kidneys" />
           </FonImg>
         </WrapperImg>
-        <ArrowPage double top="280px" left="450px" rotate="rotate(15deg)" />
+
+        <WrapperImg top="440px" left="250px">
+          <TextImg right>
+            <b>2</b>
+            <br />↓ инкретинового <br />
+            эффекта
+          </TextImg>
+        </WrapperImg>
+
+        <WrapperImg top="440px" left="415px">
+          <TextImg>
+            <b>3</b>
+            <br />
+            Дефект <br />
+            α-клеток
+          </TextImg>
+        </WrapperImg>
+
+        <LitlleTitle top="515px" left="160px">
+          ↓ амилин
+        </LitlleTitle>
+        <LitlleTitle top="575px" left="420px">
+          ↑ глюкагон
+        </LitlleTitle>
+        <LitlleTitle top="660px" left="320px" fs="24px">
+          Гипергликемия
+        </LitlleTitle>
+
+        <ArrowPage double top="280px" left="455px" rotate="rotate(15deg)" />
         <ArrowPage
           double
           top="325px"
@@ -157,10 +186,46 @@ const Page3 = () => {
           width="130px"
         />
         <ArrowPage
-          top="400px"
-          left="190px"
+          top="410px"
+          left="170px"
           rotate="rotate(130deg)"
-          width="220px"
+          width="240px"
+        />
+        <ArrowPage
+          top="485px"
+          left="245px"
+          rotate="rotate(90deg)"
+          width="320px"
+        />
+        <ArrowPage
+          top="375px"
+          left="330px"
+          rotate="rotate(90deg)"
+          width="100px"
+        />
+        <ArrowPage
+          top="375px"
+          left="380px"
+          rotate="rotate(90deg)"
+          width="100px"
+        />
+        <ArrowPage
+          top="545px"
+          left="420px"
+          rotate="rotate(90deg)"
+          width="30px"
+        />
+        <ArrowPage
+          top="628px"
+          left="415px"
+          rotate="rotate(90deg)"
+          width="35px"
+        />
+        <ArrowPage
+          top="592px"
+          left="325px"
+          rotate="rotate(90deg)"
+          width="105px"
         />
       </Slide3>
     </Content>
