@@ -9,8 +9,11 @@ const App = () => {
   const [page, setPage] = useState("1");
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
+  const [form, setForm] = useState("3");
 
-  // console.log(page);
+  const OnSubmit = (data) => {
+    setForm(data);
+  };
 
   const touchMove = (n) => {
     const scr =
@@ -20,8 +23,8 @@ const App = () => {
         ? "1"
         : "2";
 
-    console.log(n);
-    console.log("scr", scr);
+    // console.log(n);
+    // console.log("scr", scr);
 
     if (page !== scr) {
       setPage(scr);
@@ -69,7 +72,7 @@ const App = () => {
   };
 
   const Pages = () => {
-    const pages = [<Page1 />, <Page2 />, <Page3 />];
+    const pages = [<Page1 />, <Page2 />, <Page3 range={form} />];
     return pages.map((item, index) => {
       const classPage = String(index + 1);
 
@@ -102,8 +105,13 @@ const App = () => {
         })}
       </Buttons>
       <Range>
-        <input type="range" />
-        <div>44</div>
+        <input
+          type="range"
+          min="1"
+          max="3"
+          onChange={(e) => OnSubmit(e.target.value)}
+        />
+        <div></div>
       </Range>
     </Wrapper>
   );

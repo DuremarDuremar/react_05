@@ -22,9 +22,10 @@ import microflora from "../images/microflora.png";
 import musle from "../images/musle.png";
 import stomach from "../images/stomach.png";
 
-const Page3 = () => {
+const Page3 = ({ range }) => {
+  console.log(range);
   return (
-    <Content>
+    <Content range={range}>
       <Slide1>
         <Title>1</Title>
       </Slide1>

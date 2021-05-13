@@ -3,16 +3,19 @@ import styled from "styled-components";
 export const Content = styled.section`
   height: 100%;
   display: flex;
-  transform: translate(-1536px);
+  transform: ${(props) =>
+    props.range === "3"
+      ? "translate(-1536px)"
+      : props.range === "2"
+      ? "translate(-768px)"
+      : "translate(0)"};
 `;
 
 export const Slide1 = styled.section`
-  background-color: azure;
   min-width: 768px;
   width: 100%;
 `;
 export const Slide2 = styled.section`
-  background-color: blueviolet;
   min-width: 768px;
   width: 100%;
 `;
