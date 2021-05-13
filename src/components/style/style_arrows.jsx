@@ -5,7 +5,6 @@ export const Arrows = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: 14px;
-  /* width: ${(props) => props.width || "80px"}; */
   position: absolute;
   top: ${(props) => props.top || "0"};
   left: ${(props) => props.left || "0"};

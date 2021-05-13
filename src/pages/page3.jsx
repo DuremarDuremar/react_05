@@ -10,6 +10,7 @@ import {
   WrapperImg,
   BlockImg,
   LitlleTitle,
+  Range,
 } from "./style/style3";
 import ArrowPage from "../components/arrows";
 import beta from "../images/beta.png";
@@ -21,7 +22,6 @@ import lipid from "../images/lipid.png";
 import microflora from "../images/microflora.png";
 import musle from "../images/musle.png";
 import stomach from "../images/stomach.png";
-// import "./page3.css";
 
 const Page3 = () => {
   return (

@@ -110,3 +110,13 @@ export const LitlleTitle = styled.h4`
   font-weight: 500;
   letter-spacing: -0.31px;
 `;
+
+export const Range = styled.div`
+  position: fixed;
+  z-index: 3;
+  bottom: 10%;
+  right: 0;
+  background-color: #fff;
+  width: 200px;
+  height: 100px;
+`;

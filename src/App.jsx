@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { scroller, Element } from "react-scroll";
+import { scroller } from "react-scroll";
 import Page1 from "./pages/page1.jsx";
 import Page2 from "./pages/page2.jsx";
 import Page3 from "./pages/page3.jsx";
-import "./App.css";
+import { Page, Wrapper, Buttons, Button } from "./style_app";
 
 const App = () => {
   const [page, setPage] = useState("1");
@@ -71,42 +71,37 @@ const App = () => {
   const Pages = () => {
     const pages = [<Page1 />, <Page2 />, <Page3 />];
     return pages.map((item, index) => {
-      const classPage = `page${index + 1}`;
+      const classPage = String(index + 1);
 
       return (
-        <Element
-          // id={String(index + 1)}
+        <Page
           key={index}
-          className={classPage + " page"}
-          name={String(index + 1)}
+          number={classPage}
+          name={classPage}
           onTouchStart={(e) => handleTouchStart(e, index + 1)}
           onTouchMove={(e) => handleTouchMove(e)}
           onTouchEnd={() => handleTouchEnd()}
         >
           {item}
-        </Element>
+        </Page>
       );
     });
   };
   return (
-    <div className="wrapper">
+    <Wrapper>
       {Pages()}
-      <div className="buttons">
+      <Buttons>
         {[...new Array(3).keys()].map((item) => {
-          const classBtn =
-            Number(page) === item + 1
-              ? `btn-${item + 1} btn-active`
-              : `btn-${item + 1}`;
           return (
-            <button
+            <Button
               key={item}
-              className={classBtn}
+              active={Number(page) === item + 1 ? 1 : 0}
               onClick={() => btnMove(item + 1)}
             />
           );
         })}
-      </div>
-    </div>
+      </Buttons>
+    </Wrapper>
   );
 };
 

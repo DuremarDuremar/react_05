@@ -1,4 +1,4 @@
-.wrapper {
+/* .wrapper {
   position: relative;
   background-color: #0d319c;
 }
@@ -8,8 +8,8 @@
   width: 768px;
   min-height: 100vh;
   position: relative;
-}
-.page1 {
+} */
+/* .page1 {
   background-color: blue;
   background-image: url(./images/fon01.jpg);
   background-position: center;
@@ -30,7 +30,7 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
   overflow-x: hidden;
-}
+} */
 .buttons {
   position: fixed;
   display: flex;
