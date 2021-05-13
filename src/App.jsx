@@ -3,14 +3,14 @@ import { scroller } from "react-scroll";
 import Page1 from "./pages/page1.jsx";
 import Page2 from "./pages/page2.jsx";
 import Page3 from "./pages/page3.jsx";
-import { Page, Wrapper, Buttons, Button } from "./style_app";
+import { Page, Wrapper, Buttons, Button, Range } from "./style_app";
 
 const App = () => {
   const [page, setPage] = useState("1");
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
 
-  console.log(page);
+  // console.log(page);
 
   const touchMove = (n) => {
     const scr =
@@ -101,6 +101,10 @@ const App = () => {
           );
         })}
       </Buttons>
+      <Range>
+        <input type="range" />
+        <div>44</div>
+      </Range>
     </Wrapper>
   );
 };

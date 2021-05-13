@@ -10,7 +10,6 @@ import {
   WrapperImg,
   BlockImg,
   LitlleTitle,
-  Range,
 } from "./style/style3";
 import ArrowPage from "../components/arrows";
 import beta from "../images/beta.png";
