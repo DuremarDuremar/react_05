@@ -1,9 +1,9 @@
 import styled, { keyframes, css } from "styled-components";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const SliderRotate = (arg) => {
   const [Slider, setSlider] = useState("-1536px");
-  const [prevSlider, setPrevSlider] = useState("-1536px");
+  const [, setPrevSlider] = useState("-1536px");
 
   useEffect(() => {
     setPrevSlider((prev) => {
@@ -11,9 +11,6 @@ const SliderRotate = (arg) => {
       return prev !== arg ? arg : prev;
     });
   }, [arg]);
-  console.log("arg", arg);
-  console.log("prevSlider", prevSlider);
-  console.log("Slider", Slider);
   return Slider;
 };
 
@@ -135,7 +132,6 @@ export const FonImg = styled.div`
 
 export const LitlleTitle = styled.h4`
   position: ${(props) => (props.static ? "static" : "absolute")};
-  /* position: absolute; */
   top: ${(props) => props.top || "0"};
   left: ${(props) => props.left || "0"};
   font-size: ${(props) => props.fs || "15px"};

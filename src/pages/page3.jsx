@@ -22,8 +22,6 @@ import musle from "../images/musle.png";
 import stomach from "../images/stomach.png";
 
 const Page3 = ({ range }) => {
-  console.log(range);
-
   const rotate = range === "1" ? "0" : range === "2" ? "-768px" : "-1536px";
 
   return (
