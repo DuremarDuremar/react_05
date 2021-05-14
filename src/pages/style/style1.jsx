@@ -28,3 +28,50 @@ export const Wrapper = styled.div`
   top: 50%;
   left: 50%;
 `;
+
+export const Text = styled.h4`
+  text-align: center;
+  position: absolute;
+  object-fit: contain;
+  font-family: Lato;
+  letter-spacing: 0.39px;
+  text-align: left;
+  color: #0d319c;
+  top: ${(props) => props.top || "0"};
+  left: ${(props) => props.left || "0"};
+  ${(props) =>
+    props.first &&
+    `
+    display: flex;
+    align-items: center;
+  `}
+`;
+
+export const PageFooter = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all ease-out 0.35s;
+  &:hover {
+    opacity: 0.5;
+  }
+  h3 {
+    font-family: GothamPro;
+    letter-spacing: -0.3px;
+    color: #fff;
+  }
+
+  .array {
+    width: 50px;
+    height: 30px;
+    margin-bottom: 35px;
+  }
+  .orange {
+    width: 600px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+  }
+`;

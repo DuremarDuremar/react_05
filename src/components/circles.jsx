@@ -1,19 +1,20 @@
 import React from "react";
-import "./circles.css";
+import { Circle, Wrapper } from "./style/style_circles.jsx";
+// import "./circles.css";
 
-export const circle1 = <div className="circle circle1"></div>;
+export const circle1 = <Circle width="46px" height="46px" first></Circle>;
 export const circle2 = (
-  <div className="wrapper-circle2">
-    <div className="circle circle2"></div>
-  </div>
+  <Wrapper>
+    <Circle width="26px" height="26px" top="20%" left="20%" bcim></Circle>
+  </Wrapper>
 );
 export const circle3 = (
-  <div className="wrapper-circle3">
-    <div className="circle circle3"></div>
-  </div>
+  <Wrapper>
+    <Circle noafter></Circle>
+  </Wrapper>
 );
 export const circle4 = (
-  <div className="wrapper-circle4">
-    <div className="circle circle4"></div>
-  </div>
+  <Wrapper>
+    <Circle top="12%" left="12%" w="10px" h="10px" bcim></Circle>
+  </Wrapper>
 );

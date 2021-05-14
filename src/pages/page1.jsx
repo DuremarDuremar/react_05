@@ -1,35 +1,40 @@
 import React from "react";
+import { Content, Title, Wrapper, Text, PageFooter } from "./style/style1";
 import { circle1, circle2, circle3, circle4 } from "../components/circles";
+import { animateScroll } from "react-scroll";
 import bottom from "../images/bottom.png";
 import array from "../images/array.png";
-import "./page1.css";
-const Page1 = () => {
+
+const Page1 = ({ setPage }) => {
+  const ToBottom = () => {
+    setPage("3");
+    animateScroll.scrollTo(2000);
+  };
+
   return (
-    <section className="page1_content">
-      <h1 className="page1_title">
-        Всегда ли цели терапии СД2 на поверхности?
-      </h1>
-      <div className="page1_wrapper">
-        <h4 className="page1_text page1_text1">
+    <Content>
+      <Title>Всегда ли цели терапии СД2 на поверхности?</Title>
+      <Wrapper>
+        <Text top="120px" left="330px" first>
           {circle1}&nbsp;<span>Цель по HbA1c</span>
-        </h4>
-        <h4 className="page1_text page1_text2">
+        </Text>
+        <Text top="310px" left="80px">
           <span>Гипогликемия</span> {circle2}
-        </h4>
-        <h4 className="page1_text page1_text3">
+        </Text>
+        <Text top="450px" left="195px">
           <span>Осложнения СД</span>
           {circle3}
-        </h4>
-        <h4 className="page1_text page1_text4">
+        </Text>
+        <Text top="430px" left="505px">
           <span>СС риски</span> {circle4}
-        </h4>
-      </div>
-      <div className="page1_bottom">
-        <h3 className="page1_footer-text">Листайте вниз</h3>
-        <img src={array} alt="array" className="page1_array" />
-        <img className="page1_orange" src={bottom} alt="bottom" />
-      </div>
-    </section>
+        </Text>
+      </Wrapper>
+      <PageFooter onClick={() => ToBottom()}>
+        <h3>Листайте вниз</h3>
+        <img src={array} alt="array" className="array" />
+        <img src={bottom} alt="bottom" className="orange" />
+      </PageFooter>
+    </Content>
   );
 };
 

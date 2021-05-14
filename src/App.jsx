@@ -72,7 +72,11 @@ const App = () => {
   };
 
   const Pages = () => {
-    const pages = [<Page1 />, <Page2 />, <Page3 range={form} />];
+    const pages = [
+      <Page1 setPage={setPage} />,
+      <Page2 />,
+      <Page3 range={form} />,
+    ];
     return pages.map((item, index) => {
       const classPage = String(index + 1);
 
