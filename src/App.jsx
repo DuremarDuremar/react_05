@@ -112,6 +112,11 @@ const App = () => {
           onChange={(e) => OnSubmit(e.target.value)}
         />
         <div></div>
+        <ul>
+          <li>1998</li>
+          <li>2009</li>
+          <li>2016</li>
+        </ul>
       </Range>
     </Wrapper>
   );

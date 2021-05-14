@@ -59,12 +59,12 @@ export const Button = styled.button`
 export const Range = styled.div`
   position: absolute;
   z-index: 3;
-  bottom: 110px;
+  bottom: 10px;
   transform: translateX(-50%);
   left: 50%;
   border: 2px solid black;
   width: 668px;
-  height: 75px;
+  height: 175px;
   overflow: hidden;
 
   input[type="range"] {
@@ -115,5 +115,18 @@ export const Range = styled.div`
     height: 20px;
     background-color: gray;
     z-index: -1;
+  }
+  ul {
+    position: absolute;
+    bottom: 10px;
+    transform: translateX(-50%);
+    left: 48%;
+    width: 500px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    font-family: GothamPro;
+    color: #fff;
+    font-size: 20px;
   }
 `;
