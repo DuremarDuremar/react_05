@@ -18,6 +18,7 @@ export const Slide1 = styled.section`
 export const Slide2 = styled.section`
   min-width: 768px;
   width: 100%;
+  position: relative;
 `;
 export const Slide3 = styled.section`
   min-width: 768px;
@@ -71,6 +72,13 @@ export const WrapperImg = styled.div`
   top: ${(props) => props.top || "0"};
   left: ${(props) => props.left || "0"};
   display: ${(props) => props.display || "flex"};
+  ${(props) =>
+    props.slide2 &&
+    `
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  `}
 `;
 
 export const TextImg = styled.h3`
@@ -81,6 +89,7 @@ export const TextImg = styled.h3`
     props.fs ? "0 0 8px 0" : props.right ? "0 8px 0 0" : "0 0 0 8px"};
   letter-spacing: -0.51px;
   text-align: ${(props) => props.right && "right"};
+  text-align: ${(props) => props.center && "center"};
   color: #fff;
   b {
     font-size: 30px;
@@ -104,7 +113,8 @@ export const FonImg = styled.div`
 `;
 
 export const LitlleTitle = styled.h4`
-  position: absolute;
+  position: ${(props) => (props.static ? "static" : "absolute")};
+  /* position: absolute; */
   top: ${(props) => props.top || "0"};
   left: ${(props) => props.left || "0"};
   font-size: ${(props) => props.fs || "15px"};
@@ -112,4 +122,16 @@ export const LitlleTitle = styled.h4`
   margin: 0;
   font-weight: 500;
   letter-spacing: -0.31px;
+`;
+
+export const BlockTitle = styled.div`
+  position: absolute;
+  width: 360px;
+  height: 160px;
+  border: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 400px;
+  left: 205px;
 `;

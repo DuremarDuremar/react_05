@@ -10,6 +10,7 @@ import {
   WrapperImg,
   BlockImg,
   LitlleTitle,
+  BlockTitle,
 } from "./style/style3";
 import ArrowPage from "../components/arrows";
 import beta from "../images/beta.png";
@@ -29,9 +30,62 @@ const Page3 = ({ range }) => {
       <Slide1>
         <Title>1</Title>
       </Slide1>
+
       <Slide2>
-        <Title>2</Title>
+        <Title>Смертельный октет</Title>
+        <BlockTitle>
+          <LitlleTitle fs="24px" static>
+            Гипергликемия
+          </LitlleTitle>
+        </BlockTitle>
+        <WrapperImg top="180px" left="350px" slide2>
+          <TextImg fs="26px" center>
+            <b>1</b> <br />
+            β-клетки
+          </TextImg>
+          <FonImg
+            padding="15px 11px 0"
+            width="65px"
+            height="65px"
+            widthImg="85%"
+            heightImg="85%"
+          >
+            <img src={beta} alt="beta" />
+          </FonImg>
+        </WrapperImg>
+        <WrapperImg top="280px" left="40px">
+          <TextImg right>
+            Инкретинового <br />
+            эффекта
+          </TextImg>
+          <FonImg
+            padding="15px 11px 0"
+            width="65px"
+            height="65px"
+            widthImg="85%"
+            heightImg="85%"
+          >
+            <b>2</b>
+          </FonImg>
+        </WrapperImg>
+
+        <WrapperImg top="280px" left="530px">
+          <FonImg
+            padding="15px 11px 0"
+            width="65px"
+            height="65px"
+            widthImg="85%"
+            heightImg="85%"
+          >
+            <b>3</b>
+          </FonImg>
+          <TextImg>
+            Дефект <br />
+            α-клеток
+          </TextImg>
+        </WrapperImg>
       </Slide2>
+
       <Slide3>
         <Title>Звенья патогенеза СД2</Title>
         <WrapperImg top="180px" left="360px" display="block">
