@@ -38,7 +38,8 @@ const Page3 = ({ range }) => {
             Гипергликемия
           </LitlleTitle>
         </BlockTitle>
-        <WrapperImg top="180px" left="350px" slide2>
+
+        <WrapperImg top="180px" left="340px" slide2>
           <TextImg fs="26px" center>
             <b>1</b> <br />
             β-клетки
@@ -53,7 +54,7 @@ const Page3 = ({ range }) => {
             <img src={beta} alt="beta" />
           </FonImg>
         </WrapperImg>
-        <WrapperImg top="280px" left="40px">
+        <WrapperImg top="255px" left="40px">
           <TextImg right>
             Инкретинового <br />
             эффекта
@@ -68,8 +69,7 @@ const Page3 = ({ range }) => {
             <b>2</b>
           </FonImg>
         </WrapperImg>
-
-        <WrapperImg top="280px" left="530px">
+        <WrapperImg top="255px" left="515px">
           <FonImg
             padding="15px 11px 0"
             width="65px"
@@ -84,6 +84,105 @@ const Page3 = ({ range }) => {
             α-клеток
           </TextImg>
         </WrapperImg>
+        <WrapperImg top="450px" left="600px">
+          <FonImg widthImg="80%" heightImg="80%">
+            <img src={lipid} alt="lipid" />
+          </FonImg>
+          <TextImg pt>
+            <b>4</b>
+            <br />
+            Жировые
+            <br /> клетки
+          </TextImg>
+        </WrapperImg>
+        <WrapperImg top="450px" left="30px">
+          <TextImg right pt>
+            <b>8</b>
+            <br />
+            Почки
+          </TextImg>
+          <FonImg>
+            <img src={kidneys} alt="kidneys" />
+          </FonImg>
+        </WrapperImg>
+
+        <WrapperImg top="640px" left="165px" slide2>
+          <FonImg widthImg="75%" heightImg="75%">
+            <img src={brain} alt="brain" />
+          </FonImg>
+          <TextImg center pt>
+            <b>7</b>
+            <br />
+            Головной <br />
+            мозг
+          </TextImg>
+        </WrapperImg>
+        <WrapperImg top="640px" left="345px" slide2>
+          <FonImg widthImg="85%" heightImg="85%" padding="10px 0 0">
+            <img src={capa} alt="capa" />
+          </FonImg>
+          <TextImg center pt>
+            <b>6</b>
+            <br />
+            Печень
+          </TextImg>
+        </WrapperImg>
+        <WrapperImg top="640px" left="510px" slide2>
+          <FonImg widthImg="90%" heightImg="90%">
+            <img src={musle} alt="musle" />
+          </FonImg>
+          <TextImg center pt>
+            <b>5</b>
+            <br />
+            Мышцы
+          </TextImg>
+        </WrapperImg>
+
+        <ArrowPage
+          top="362px"
+          left="360px"
+          rotate="rotate(90deg)"
+          width="55px"
+        />
+        <ArrowPage
+          top="362px"
+          left="520px"
+          rotate="rotate(90deg)"
+          width="55px"
+        />
+        <ArrowPage
+          top="362px"
+          left="180px"
+          rotate="rotate(90deg)"
+          width="55px"
+        />
+
+        <ArrowPage top="480px" left="160px" rotate="rotate(0)" width="30px" />
+        <ArrowPage
+          top="480px"
+          left="560px"
+          rotate="rotate(180deg)"
+          width="30px"
+        />
+
+        <ArrowPage
+          top="612px"
+          left="185px"
+          rotate="rotate(-90deg)"
+          width="43px"
+        />
+        <ArrowPage
+          top="612px"
+          left="350px"
+          rotate="rotate(-90deg)"
+          width="43px"
+        />
+        <ArrowPage
+          top="612px"
+          left="525px"
+          rotate="rotate(-90deg)"
+          width="43px"
+        />
       </Slide2>
 
       <Slide3>

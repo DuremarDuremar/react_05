@@ -91,8 +91,9 @@ export const TextImg = styled.h3`
   text-align: ${(props) => props.right && "right"};
   text-align: ${(props) => props.center && "center"};
   color: #fff;
+  padding-top: ${(props) => props.pt && "10px"};
   b {
-    font-size: 30px;
+    font-size: 34px;
   }
 `;
 
@@ -110,6 +111,13 @@ export const FonImg = styled.div`
     max-width: ${(props) => props.widthImg || "100%"};
     max-height: ${(props) => props.heightImg || "100%"};
   }
+
+  b {
+    font-family: Lato;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+  }
 `;
 
 export const LitlleTitle = styled.h4`
@@ -126,12 +134,12 @@ export const LitlleTitle = styled.h4`
 
 export const BlockTitle = styled.div`
   position: absolute;
-  width: 360px;
+  width: 340px;
   height: 160px;
   border: 2px solid #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 400px;
+  top: 410px;
   left: 205px;
 `;
