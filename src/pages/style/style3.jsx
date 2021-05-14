@@ -1,26 +1,39 @@
-import styled from "styled-components";
+import styled, { keyframes, css } from "styled-components";
+import React, { useState, useEffect } from "react";
+
+const SliderRotate = (arg) => {
+  const [Slider, setSlider] = useState("-1536px");
+  const [prevSlider, setPrevSlider] = useState("-1536px");
+
+  useEffect(() => {
+    setPrevSlider((prev) => {
+      setSlider(prev);
+      return prev !== arg ? arg : prev;
+    });
+  }, [arg]);
+  console.log("arg", arg);
+  console.log("prevSlider", prevSlider);
+  console.log("Slider", Slider);
+  return Slider;
+};
+
+const slide = (prev, n) => keyframes`
+    from {transform:translate(${prev})}
+    to {transform:translate(${n})}
+    
+`;
 
 export const Content = styled.section`
   height: 100%;
   display: flex;
-  transform: ${(props) =>
-    props.range === "3"
-      ? "translate(-1536px)"
-      : props.range === "2"
-      ? "translate(-768px)"
-      : "translate(0)"};
+  animation: ${({ range }) =>
+    css`
+      ${slide(SliderRotate(range), range)} 1s ease-in-out;
+      animation-fill-mode: forwards;
+    `};
 `;
 
-export const Slide1 = styled.section`
-  min-width: 768px;
-  width: 100%;
-`;
-export const Slide2 = styled.section`
-  min-width: 768px;
-  width: 100%;
-  position: relative;
-`;
-export const Slide3 = styled.section`
+export const Slide = styled.section`
   min-width: 768px;
   width: 100%;
   position: relative;

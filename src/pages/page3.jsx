@@ -1,9 +1,7 @@
 import React from "react";
 import {
   Content,
-  Slide1,
-  Slide2,
-  Slide3,
+  Slide,
   Title,
   TextImg,
   FonImg,
@@ -25,9 +23,12 @@ import stomach from "../images/stomach.png";
 
 const Page3 = ({ range }) => {
   console.log(range);
+
+  const rotate = range === "1" ? "0" : range === "2" ? "-768px" : "-1536px";
+
   return (
-    <Content range={range}>
-      <Slide1>
+    <Content range={rotate}>
+      <Slide>
         <Title>Звенья патогенеза СД2</Title>
         <BlockTitle width="280px" height="100px" left="250px" top="600px">
           <LitlleTitle fs="22px" static>
@@ -100,9 +101,9 @@ const Page3 = ({ range }) => {
           rotate="rotate(180deg)"
           width="85px"
         />
-      </Slide1>
+      </Slide>
 
-      <Slide2>
+      <Slide>
         <Title>Смертельный октет</Title>
         <BlockTitle>
           <LitlleTitle fs="24px" static>
@@ -254,9 +255,9 @@ const Page3 = ({ range }) => {
           rotate="rotate(-90deg)"
           width="43px"
         />
-      </Slide2>
+      </Slide>
 
-      <Slide3>
+      <Slide>
         <Title>Звенья патогенеза СД2</Title>
         <WrapperImg top="180px" left="360px" display="block">
           <TextImg fs="26px">
@@ -483,7 +484,7 @@ const Page3 = ({ range }) => {
           rotate="rotate(90deg)"
           width="20px"
         />
-      </Slide3>
+      </Slide>
     </Content>
   );
 };
