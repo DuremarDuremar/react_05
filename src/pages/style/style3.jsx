@@ -134,12 +134,12 @@ export const LitlleTitle = styled.h4`
 
 export const BlockTitle = styled.div`
   position: absolute;
-  width: 340px;
-  height: 160px;
+  width: ${(props) => props.width || "340px"};
+  height: ${(props) => props.height || "160px"};
+  top: ${(props) => props.top || "410px"};
+  left: ${(props) => props.left || "205px"};
   border: 2px solid #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 410px;
-  left: 205px;
 `;

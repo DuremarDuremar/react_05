@@ -62,7 +62,7 @@ export const Range = styled.div`
   bottom: 10px;
   transform: translateX(-50%);
   left: 50%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 668px;
   height: 175px;
   overflow: hidden;
@@ -77,6 +77,7 @@ export const Range = styled.div`
     width: 500px;
     max-width: 100%;
     transition: box-shadow 0.2s ease-in-out;
+    cursor: pointer;
 
     & {
       margin-top: 30px;

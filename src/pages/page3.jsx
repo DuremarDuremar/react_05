@@ -28,7 +28,78 @@ const Page3 = ({ range }) => {
   return (
     <Content range={range}>
       <Slide1>
-        <Title>1</Title>
+        <Title>Звенья патогенеза СД2</Title>
+        <BlockTitle width="280px" height="100px" left="250px" top="600px">
+          <LitlleTitle fs="22px" static>
+            Гипергликемия
+          </LitlleTitle>
+        </BlockTitle>
+
+        <WrapperImg top="180px" left="360px" slide2>
+          <TextImg fs="26px" center>
+            <b>1</b> <br />
+            β-клетки
+          </TextImg>
+          <FonImg
+            padding="13px 11px 6px"
+            width="85px"
+            height="85px"
+            widthImg="80%"
+            heightImg="80%"
+          >
+            <img src={beta} alt="beta" />
+          </FonImg>
+        </WrapperImg>
+        <WrapperImg top="540px" left="50px" slide2>
+          <TextImg fs="26px" center>
+            <b>2</b> <br />
+            Мышцы
+          </TextImg>
+          <FonImg width="85px" height="85px" widthImg="90%" heightImg="90%">
+            <img src={musle} alt="musle" />
+          </FonImg>
+        </WrapperImg>
+        <WrapperImg top="540px" left="650px" slide2>
+          <TextImg fs="26px" center>
+            <b>3</b> <br />
+            Печень
+          </TextImg>
+          <FonImg
+            padding="13px 0 0 10px"
+            width="85px"
+            height="85px"
+            widthImg="70%"
+            heightImg="70%"
+          >
+            <img src={capa} alt="capa" />
+          </FonImg>
+        </WrapperImg>
+
+        <ArrowPage
+          top="450px"
+          left="310px"
+          rotate="rotate(90deg)"
+          width="185px"
+        />
+        <ArrowPage
+          top="470px"
+          left="130px"
+          rotate="rotate(130deg)"
+          width="280px"
+        />
+        <ArrowPage
+          top="470px"
+          left="400px"
+          rotate="rotate(50deg)"
+          width="280px"
+        />
+        <ArrowPage top="650px" left="150px" rotate="rotate(0)" width="85px" />
+        <ArrowPage
+          top="650px"
+          left="550px"
+          rotate="rotate(180deg)"
+          width="85px"
+        />
       </Slide1>
 
       <Slide2>
@@ -202,7 +273,7 @@ const Page3 = ({ range }) => {
           </FonImg>
         </WrapperImg>
         <WrapperImg top="260px" left="540px">
-          <FonImg widthImg="70%" heightImg="70%">
+          <FonImg widthImg="75%" heightImg="75%">
             <img src={brain} alt="brain" />
           </FonImg>
           <TextImg>
