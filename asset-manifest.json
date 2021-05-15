@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react_05/static/css/main.e10086e5.chunk.css",
-    "main.js": "/react_05/static/js/main.eaf23103.chunk.js",
-    "main.js.map": "/react_05/static/js/main.eaf23103.chunk.js.map",
+    "main.css": "/react_05/static/css/main.d61cf420.chunk.css",
+    "main.js": "/react_05/static/js/main.4cf31dbd.chunk.js",
+    "main.js.map": "/react_05/static/js/main.4cf31dbd.chunk.js.map",
     "runtime-main.js": "/react_05/static/js/runtime-main.1a1dd403.js",
     "runtime-main.js.map": "/react_05/static/js/runtime-main.1a1dd403.js.map",
     "static/js/2.cb64ed6b.chunk.js": "/react_05/static/js/2.cb64ed6b.chunk.js",
     "static/js/2.cb64ed6b.chunk.js.map": "/react_05/static/js/2.cb64ed6b.chunk.js.map",
     "index.html": "/react_05/index.html",
-    "static/css/main.e10086e5.chunk.css.map": "/react_05/static/css/main.e10086e5.chunk.css.map",
+    "static/css/main.d61cf420.chunk.css.map": "/react_05/static/css/main.d61cf420.chunk.css.map",
     "static/js/2.cb64ed6b.chunk.js.LICENSE.txt": "/react_05/static/js/2.cb64ed6b.chunk.js.LICENSE.txt",
     "static/media/index.css": "/react_05/static/media/latosemibold.c50637e1.woff",
     "static/media/bottom.bc295378.png": "/react_05/static/media/bottom.bc295378.png",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.1a1dd403.js",
     "static/js/2.cb64ed6b.chunk.js",
-    "static/css/main.e10086e5.chunk.css",
-    "static/js/main.eaf23103.chunk.js"
+    "static/css/main.d61cf420.chunk.css",
+    "static/js/main.4cf31dbd.chunk.js"
   ]
 }
