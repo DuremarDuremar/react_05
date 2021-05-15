@@ -23,9 +23,6 @@ const App = () => {
         ? "1"
         : "2";
 
-    // console.log(n);
-    // console.log("scr", scr);
-
     if (page !== scr) {
       setPage(scr);
       scroller.scrollTo(scr, {
@@ -35,8 +32,8 @@ const App = () => {
       });
     }
 
-    setTouchStart(0);
-    setTouchEnd(0);
+    // setTouchStart(0);
+    // setTouchEnd(0);
   };
 
   const handleTouchStart = (e, id) => {
