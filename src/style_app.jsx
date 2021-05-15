@@ -61,9 +61,10 @@ export const Range = styled.div`
   position: absolute;
   z-index: 3;
   bottom: 10px;
-  transform: translateX(-50%);
-  left: 50%;
+  /* transform: translateX(-50%);
+  left: 50%; */
   /* border: 2px solid black; */
+  left: 8%;
   width: 668px;
   height: 175px;
   overflow: hidden;
