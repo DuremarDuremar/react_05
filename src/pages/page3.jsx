@@ -9,7 +9,10 @@ import {
   BlockImg,
   LitlleTitle,
   BlockTitle,
+  Ice,
 } from "./style/style3";
+import ice1 from "../images/floes/ice1.png";
+import ice3 from "../images/floes/ice3.png";
 import ArrowPage from "../components/arrows";
 import beta from "../images/beta.png";
 import brain from "../images/brain.png";
@@ -99,6 +102,33 @@ const Page3 = ({ range }) => {
           rotate="rotate(180deg)"
           width="85px"
         />
+        <Ice
+          width="35px"
+          height="35px"
+          left="640px"
+          top="110px"
+          rotate="rotate(0)"
+        >
+          <img src={ice1} alt="1" />
+        </Ice>
+        <Ice
+          width="100px"
+          height="100px"
+          left="520px"
+          top="220px"
+          rotate="rotate(30deg)"
+        >
+          <img src={ice3} alt="3" />
+        </Ice>
+        <Ice
+          width="175px"
+          height="175px"
+          left="-30px"
+          top="760px"
+          rotate="rotate(-40deg)"
+        >
+          <img src={ice3} alt="2" />
+        </Ice>
       </Slide>
 
       <Slide>
@@ -253,6 +283,34 @@ const Page3 = ({ range }) => {
           rotate="rotate(-90deg)"
           width="43px"
         />
+
+        <Ice
+          width="35px"
+          height="35px"
+          left="400px"
+          top="80px"
+          rotate="rotate(0)"
+        >
+          <img src={ice1} alt="1" />
+        </Ice>
+        <Ice
+          width="100px"
+          height="100px"
+          left="10px"
+          top="280px"
+          rotate="rotate(30deg)"
+        >
+          <img src={ice3} alt="3" />
+        </Ice>
+        <Ice
+          width="125px"
+          height="125px"
+          left="580px"
+          top="870px"
+          rotate="rotate(-45deg)"
+        >
+          <img src={ice3} alt="2" />
+        </Ice>
       </Slide>
 
       <Slide>
@@ -482,6 +540,34 @@ const Page3 = ({ range }) => {
           rotate="rotate(90deg)"
           width="20px"
         />
+
+        <Ice
+          width="35px"
+          height="35px"
+          left="10px"
+          top="110px"
+          rotate="rotate(0)"
+        >
+          <img src={ice1} alt="1" />
+        </Ice>
+        <Ice
+          width="100px"
+          height="100px"
+          left="670px"
+          top="230px"
+          rotate="rotate(30deg)"
+        >
+          <img src={ice3} alt="3" />
+        </Ice>
+        <Ice
+          width="125px"
+          height="125px"
+          left="70px"
+          top="870px"
+          rotate="rotate(-70deg)"
+        >
+          <img src={ice3} alt="3" />
+        </Ice>
       </Slide>
     </Content>
   );

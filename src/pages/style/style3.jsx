@@ -82,6 +82,7 @@ export const WrapperImg = styled.div`
   top: ${(props) => props.top || "0"};
   left: ${(props) => props.left || "0"};
   display: ${(props) => props.display || "flex"};
+  z-index: 1;
   ${(props) =>
     props.slide2 &&
     `
@@ -151,4 +152,18 @@ export const BlockTitle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
+
+export const Ice = styled.div`
+  position: absolute;
+  width: ${(props) => props.width || "60px"};
+  height: ${(props) => props.height || "60px"};
+  top: ${(props) => props.top || "0"};
+  left: ${(props) => props.left || "0"};
+  transform: ${(props) => props.rotate || "rotate(0)"};
+  opacity: 0.6;
+  img {
+    width: 100%;
+    height: 100%;
+  }
 `;

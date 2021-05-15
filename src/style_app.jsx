@@ -46,6 +46,7 @@ export const Buttons = styled.div`
   top: 50%;
   right: 2%;
   height: 60px;
+  z-index: 2;
 `;
 
 export const Button = styled.button`

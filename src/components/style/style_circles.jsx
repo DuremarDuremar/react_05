@@ -1,6 +1,6 @@
 import styled, { keyframes, css } from "styled-components";
 
-const pulse = keyframes`
+const pulse = (n) => keyframes`
     0% {
       transform: scale(0);
       opacity: 0;
@@ -16,7 +16,7 @@ const pulse = keyframes`
       );
     }
     100% {
-      transform: scale(3.5);
+      transform: scale(${n});
       opacity: 0;
       background-color: rgba(247, 139, 31, 0.3);
     }`;
@@ -35,7 +35,6 @@ export const Circle = styled.div`
 
   &:before,
   :after {
-    display: ${(props) => props.noafter && "none"};
     content: "";
     position: absolute;
     top: ${(props) => props.top || "32%"};
@@ -45,10 +44,13 @@ export const Circle = styled.div`
     width: ${(props) => props.w || "13px"};
     height: ${(props) => props.h || "13px"};
     animation: ${({ first }) =>
-      first &&
-      css`
-        ${pulse} 1s linear infinite;
-      `};
+      first
+        ? css`
+            ${pulse(3.5)} 1s linear infinite;
+          `
+        : css`
+            ${pulse(2)} 1s linear infinite;
+          `};
     ${(props) =>
       props.bcim &&
       `
@@ -58,12 +60,12 @@ export const Circle = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  width: 30px;
-  height: 30px;
-  padding: 4px;
+  width: ${(props) => props.width || "22px"};
+  height: ${(props) => props.height || "22px"};
+  padding: ${(props) => props.padding || "3px"};
+  margin: ${(props) => props.margin || "0px auto"};
   border: 2px solid #d56900;
   border-radius: 50%;
   opacity: 0.7;
   background-color: rgba(247, 139, 31, 0.5);
-  margin: 0px auto;
 `;
