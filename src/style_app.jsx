@@ -64,7 +64,7 @@ export const Range = styled.div`
   /* transform: translateX(-50%);
   left: 50%; */
   /* border: 2px solid black; */
-  left: 8%;
+  left: 10%;
   width: 668px;
   height: 175px;
   overflow: hidden;

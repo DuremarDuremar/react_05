@@ -123,7 +123,7 @@ const Page3 = ({ range }) => {
         <Ice
           width="175px"
           height="175px"
-          left="-30px"
+          left="-50px"
           top="760px"
           rotate="rotate(-40deg)"
         >
@@ -305,7 +305,7 @@ const Page3 = ({ range }) => {
         <Ice
           width="125px"
           height="125px"
-          left="580px"
+          left="555px"
           top="870px"
           rotate="rotate(-45deg)"
         >
